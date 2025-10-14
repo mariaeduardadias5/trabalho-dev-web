@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login- Mundo Literário</title>
+    <link rel="stylesheet" href="login.css">
 </head>
-<link rel="stylesheet" href="login.css">
-  </head>
 <body>
   <div class="container">
     <img src="https://mundo-literario.es/wp-content/uploads/2025/06/LOGO-MUNDO.png" alt="Logo do Mundo Literário">
@@ -27,7 +26,11 @@
         </label>
       </div>
       <button type="submit" class="btn btn-primary">Entrar</button>
-    </form>
+    </form> <br>
+    <p class="cadastro-link">
+      Ainda não tem conta?
+      <a href="cadastro.html">Cadastre-se</a>
+    </p>
   </div>
 </body>
 
