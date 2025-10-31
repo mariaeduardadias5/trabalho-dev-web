@@ -24,7 +24,7 @@
         }
 
         nav {
-            background-color: #9c0000;
+            background-color: #000000;
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -89,7 +89,7 @@
         .buy-btn {
             display: inline-block;
             margin-top: 10px;
-            background-color: #3f51b5;
+            background-color: #5a0b0b;
             color: white;
             padding: 10px 15px;
             border-radius: 5px;
@@ -97,11 +97,11 @@
         }
 
         .buy-btn:hover {
-            background-color: #303f9f;
+            background-color: #5a2208;
         }
 
         footer {
-            background-color: #3f51b5;
+            background-color: #500900;
             color: white;
             text-align: center;
             padding: 15px 0;
@@ -120,14 +120,13 @@
         <a href="#">Início</a>
         <a href="#">Categorias</a>
         <a href="#">Promoções</a>
-        <a href="#">Contato</a>
     </nav>
 
     <div class="container">
         <h2>Livros em Destaque</h2>
         <div class="books">
             <div class="book">
-                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Livro 1">
+                <img src="https://m.media-amazon.com/images/I/81SVIwe5L9L._UF1000,1000_QL80_.jpg" alt="Livro 1">
                 <div class="book-info">
                     <h3>O Pequeno Príncipe</h3>
                     <p class="price">R$ 29,90</p>
@@ -136,7 +135,7 @@
             </div>
 
             <div class="book">
-                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Livro 2">
+                <img src="https://m.media-amazon.com/images/I/61t0bwt1s3L._AC_UF1000,1000_QL80_.jpg" alt="Livro 2">
                 <div class="book-info">
                     <h3>1984</h3>
                     <p class="price">R$ 39,90</p>
@@ -145,7 +144,7 @@
             </div>
 
             <div class="book">
-                <img src="https://imgur.com/a/app6VAM" alt="Livro 3">
+                <img src="https://m.media-amazon.com/images/I/61x1ZHomWUL.jpg" alt="Livro 3">
                 <div class="book-info">
                     <h3>Dom Casmurro</h3>
                     <p class="price">R$ 24,90</p>
@@ -154,7 +153,7 @@
             </div>
 
             <div class="book">
-                <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="Livro 4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjsVdApZL92qq46ekI3yptWW98d9_wXcOQKg&s" alt="Livro 4">
                 <div class="book-info">
                     <h3>O Senhor dos Anéis</h3>
                     <p class="price">R$ 89,90</p>
