@@ -20,6 +20,12 @@
       padding: 30px 20px;
     }
 
+ header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
     nav {
       background-color: #000;
       display: flex;
@@ -183,6 +189,7 @@
 <body>
 
   <header>
+<img src="IMG-20250927-WA0004.jpg" alt="Logo Mundo Literário">
     <h1>🛒 Seu Carrinho</h1>
   </header>
 
