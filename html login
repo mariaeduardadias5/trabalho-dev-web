@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <img src="https://mundo-literario.es/wp-content/uploads/2025/06/LOGO-MUNDO.png" alt="Logo do Mundo Literário">
+   <img src="IMG-20250927-WA0004.jpg" alt="Logo Mundo Literário">
     
     <form action="/action_page.php">
       <h2>Login</h2>
