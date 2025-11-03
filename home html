@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Literário</title>
 
-    <!-- Fonte moderna -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <style>
@@ -92,8 +92,8 @@
         }
 
         .book img {
-            width: 100%;
-            height: 300px;
+            width:100%;
+            height: 400px;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
@@ -198,6 +198,42 @@
                     <p class="price">R$ 49,90</p>
                     <a href="#" class="buy-btn">Comprar</a>
                    </div>
+            </div>
+
+            <div class="book">
+                <img src="https://m.media-amazon.com/images/I/810Vj9zyi-L._AC_UF1000,1000_QL80_.jpg" alt="A hora da estrela">
+                <div class="book-info">
+                    <h3>A Hora da Estrela </h3>
+                    <p class="price">R$ 23,90</p>
+                    <a href="#" class="buy-btn">Comprar</a>
+                </div>
+                </div>
+                <div class="book">
+                <img src="https://m.media-amazon.com/images/I/81WzW3xJb5L.jpg" alt="Os Segredos da Mente Milionária">
+                <div class="book-info">
+                    <h3>Os Segredos da Mente Milionária</h3>
+                    <p class="price">R$ 29,90</p>
+                    <a href="#" class="buy-btn">Comprar</a>
+                </div>
+                </div>
+
+                <div class="book">
+                <img src="https://m.media-amazon.com/images/I/91r5G8RxqfL.jpg" alt="É assim que acaba">
+                <div class="book-info">
+                    <h3>É Assim Que Acaba</h3>
+                    <p class="price">R$ 35,90</p>
+                    <a href="#" class="buy-btn">Comprar</a>
+                </div>
+                </div>
+
+                <div class="book">
+                <img src="https://images.tcdn.com.br/img/img_prod/1323385/a_metamorfose_franz_kafka_13743_1_3b7eae33631d91fa3765f8cf658071a7.jpg" alt="Metamorfose">
+                <div class="book-info">
+                    <h3>A Metamorfose</h3>
+                    <p class="price">R$32,90</p>
+                    <a href="#" class="buy-btn">Comprar</a>
+                </div>
+                </div>
             </div>
         </div>
     </div>
