@@ -20,8 +20,8 @@ body {
   
  
   .logo {
-    width: 150px;
-    margin-bottom: 30px;
+    width: 195px;
+    margin-bottom: 20px;
   }
   
   /* Card do formulário */
@@ -39,7 +39,7 @@ body {
     margin-bottom: 25px;
     font-size: 22px;
     font-weight: bold;
-    color: #770101;
+    color: #440101;
   }
   
 
@@ -61,7 +61,7 @@ body {
 
   .btn-cadastrar {
     width: 100%;
-    background-color: #770101;
+    background-color: #440101;
     color: white;
     border: none;
     border-radius: 6px;
@@ -72,7 +72,7 @@ body {
   }
   
   .btn-cadastrar:hover {
-    background-color: #440101;
+    background-color: #770101;
   }
   
   
@@ -83,7 +83,7 @@ body {
   }
   
   .login-link a {
-    color: #770101;
+    color: #440101;
     text-decoration: none;
     font-weight: bold;
   }
