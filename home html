@@ -157,8 +157,8 @@
 
     <nav>
         <a href="home.html">Início</a>
-        <a href="#">Categorias</a>
         <a href="login.html">Login</a>
+        <a href="carrinho.html">Carrinho 🛒</a>
     </nav>
 
     <div class="container">
@@ -169,7 +169,7 @@
                 <div class="book-info">
                     <h3>O Pequeno Príncipe</h3>
                     <p class="price">R$ 29,90</p>
-                    <a href="#" class="buy-btn">Comprar</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
                 </div>
             </div>
 
@@ -178,7 +178,7 @@
                 <div class="book-info">
                     <h3>1984</h3>
                     <p class="price">R$ 22,90</p>
-                    <a href="#" class="buy-btn">Comprar</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
                 </div>
             </div>
 
@@ -187,52 +187,52 @@
                 <div class="book-info">
                     <h3>A Seleção</h3>
                     <p class="price">R$ 36,90</p>
-                    <a href="#" class="buy-btn">Comprar</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
                 </div>
             </div>
 
             <div class="book">
                 <img src="https://m.media-amazon.com/images/I/815mbcFisDL._AC_UF1000,1000_QL80_.jpg" alt="Sol da meia noite">
                 <div class="book-info">
-                    <h3>Sol da Meia-Noite </h3>
+                    <h3>Sol da Meia-Noite</h3>
                     <p class="price">R$ 49,90</p>
-                    <a href="#" class="buy-btn">Comprar</a>
-                   </div>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
+                </div>
             </div>
 
             <div class="book">
                 <img src="https://m.media-amazon.com/images/I/810Vj9zyi-L._AC_UF1000,1000_QL80_.jpg" alt="A hora da estrela">
                 <div class="book-info">
-                    <h3>A Hora da Estrela </h3>
+                    <h3>A Hora da Estrela</h3>
                     <p class="price">R$ 23,90</p>
-                    <a href="#" class="buy-btn">Comprar</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
                 </div>
-                </div>
-                <div class="book">
+            </div>
+
+            <div class="book">
                 <img src="https://m.media-amazon.com/images/I/81WzW3xJb5L.jpg" alt="Os Segredos da Mente Milionária">
                 <div class="book-info">
                     <h3>Os Segredos da Mente Milionária</h3>
                     <p class="price">R$ 29,90</p>
-                    <a href="#" class="buy-btn">Comprar</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
                 </div>
-                </div>
+            </div>
 
-                <div class="book">
+            <div class="book">
                 <img src="https://m.media-amazon.com/images/I/91r5G8RxqfL.jpg" alt="É assim que acaba">
                 <div class="book-info">
                     <h3>É Assim Que Acaba</h3>
                     <p class="price">R$ 35,90</p>
-                    <a href="#" class="buy-btn">Comprar</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
                 </div>
-                </div>
+            </div>
 
-                <div class="book">
+            <div class="book">
                 <img src="https://images.tcdn.com.br/img/img_prod/1323385/a_metamorfose_franz_kafka_13743_1_3b7eae33631d91fa3765f8cf658071a7.jpg" alt="Metamorfose">
                 <div class="book-info">
                     <h3>A Metamorfose</h3>
-                    <p class="price">R$32,90</p>
-                    <a href="#" class="buy-btn">Comprar</a>
-                </div>
+                    <p class="price">R$ 32,90</p>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
                 </div>
             </div>
         </div>
@@ -241,6 +241,29 @@
     <footer>
         <p>&copy; 2025 Mundo Literário — Todos os direitos reservados.</p>
     </footer>
+
+    <!-- 🧠 SCRIPT DO CARRINHO -->
+    <script>
+        const buttons = document.querySelectorAll('.buy-btn');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                const book = btn.closest('.book');
+                const title = book.querySelector('h3').innerText;
+                const price = book.querySelector('.price').innerText;
+                const img = book.querySelector('img').src;
+
+                let cart = JSON.parse(localStorage.getItem('carrinho')) || [];
+                cart.push({ title, price, img });
+                localStorage.setItem('carrinho', JSON.stringify(cart));
+
+                alert(`${title} foi adicionado ao carrinho! 🛒`);
+            });
+        });
+    </script>
+</body>
 
 </body>
 </html>
