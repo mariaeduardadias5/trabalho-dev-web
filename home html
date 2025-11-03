@@ -3,72 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livraria Online</title>
+    <title>Mundo Literário</title>
+
+    <!-- Fonte moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f6f2;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #682f06;
+            background-color: #2B1A13;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 20px;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
         }
 
         header h1 {
-            margin: 0;
+            margin: 10px 0 5px;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #e8d9c0;
         }
 
         nav {
             background-color: #000000;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            padding: 10px 0;
+            gap: 30px;
+            padding: 12px 0;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #ffd700;
         }
 
         .container {
             max-width: 1200px;
-            margin: 30px auto;
+            margin: 40px auto;
             padding: 0 20px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #5a0b0b;
+            font-size: 1.8em;
+            margin-bottom: 30px;
         }
 
         .books {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
 
         .book {
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
             overflow: hidden;
-            transition: transform 0.2s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .book:hover {
-            transform: scale(1.02);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
 
         .book img {
             width: 100%;
             height: 300px;
             object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .book:hover img {
+            transform: scale(1.05);
         }
 
         .book-info {
@@ -78,6 +109,7 @@
 
         .book-info h3 {
             margin: 10px 0;
+            color: #3b1c04;
         }
 
         .price {
@@ -89,44 +121,51 @@
         .buy-btn {
             display: inline-block;
             margin-top: 10px;
-            background-color: #5a0b0b;
+            background-color: #7b241c;
             color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
+            padding: 10px 20px;
+            border-radius: 6px;
             text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         .buy-btn:hover {
-            background-color: #5a2208;
+            background-color: #a93226;
+            transform: scale(1.05);
         }
 
         footer {
-            background-color: #500900;
+            background-color: #3b1c04;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="IMG-20250927-WA0004.jpg" alt="Logo Mundo Literário">
         <h1>Mundo Literário</h1>
         <p>Os melhores livros com os melhores preços!</p>
     </header>
 
     <nav>
-        <a href="#">Início</a>
+        <a href="home.html">Início</a>
         <a href="#">Categorias</a>
-        <a href="#">Promoções</a>
+        <a href="login.html">Login</a>
     </nav>
 
     <div class="container">
         <h2>Livros em Destaque</h2>
         <div class="books">
             <div class="book">
-                <img src="https://m.media-amazon.com/images/I/81SVIwe5L9L._UF1000,1000_QL80_.jpg" alt="Livro 1">
+                <img src="https://m.media-amazon.com/images/I/81SVIwe5L9L._UF1000,1000_QL80_.jpg" alt="O Pequeno Príncipe">
                 <div class="book-info">
                     <h3>O Pequeno Príncipe</h3>
                     <p class="price">R$ 29,90</p>
@@ -135,30 +174,30 @@
             </div>
 
             <div class="book">
-                <img src="https://m.media-amazon.com/images/I/61t0bwt1s3L._AC_UF1000,1000_QL80_.jpg" alt="Livro 2">
+                <img src="https://m.media-amazon.com/images/I/61t0bwt1s3L._AC_UF1000,1000_QL80_.jpg" alt="1984">
                 <div class="book-info">
                     <h3>1984</h3>
-                    <p class="price">R$ 39,90</p>
+                    <p class="price">R$ 22,90</p>
                     <a href="#" class="buy-btn">Comprar</a>
                 </div>
             </div>
 
             <div class="book">
-                <img src="https://m.media-amazon.com/images/I/61x1ZHomWUL.jpg" alt="Livro 3">
+                <img src="https://m.media-amazon.com/images/I/81ql6xkkliL.jpg" alt="A Seleção">
                 <div class="book-info">
-                    <h3>Dom Casmurro</h3>
-                    <p class="price">R$ 24,90</p>
+                    <h3>A Seleção</h3>
+                    <p class="price">R$ 36,90</p>
                     <a href="#" class="buy-btn">Comprar</a>
                 </div>
             </div>
 
             <div class="book">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjsVdApZL92qq46ekI3yptWW98d9_wXcOQKg&s" alt="Livro 4">
+                <img src="https://m.media-amazon.com/images/I/815mbcFisDL._AC_UF1000,1000_QL80_.jpg" alt="Sol da meia noite">
                 <div class="book-info">
-                    <h3>O Senhor dos Anéis</h3>
-                    <p class="price">R$ 89,90</p>
+                    <h3>Sol da Meia-Noite </h3>
+                    <p class="price">R$ 49,90</p>
                     <a href="#" class="buy-btn">Comprar</a>
-                </div>
+                   </div>
             </div>
         </div>
     </div>
