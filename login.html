@@ -39,25 +39,6 @@
     </p>
   </div>
 
-  <script>
-    // Validação de login simples
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const email = document.getElementById('email').value.trim();
-      const senha = document.getElementById('pwd').value.trim();
-
-      if (!email || !senha) {
-        alert('Por favor, preencha todos os campos.');
-        return;
-      }
-
-      // Armazena o usuário logado (simulação)
-      localStorage.setItem('usuarioLogado', JSON.stringify({ email }));
-
-      alert('Login realizado com sucesso!');
-      window.location.href = 'home.html';
-    });
-  </script>
+ <script src="login.js"></script>
 </body>
 </html>
