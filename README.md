@@ -1,3 +1,4 @@
+O ideal é manter os arquivos aqui no caso os de HTML, mas temos que fazer mais páginas e se poderem adicionem páginas php individuais.
 ✨O que temos que fazer em php:
 
 Requisitos Funcionais em PHP
